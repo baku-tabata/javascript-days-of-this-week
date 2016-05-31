@@ -16,6 +16,7 @@ function getDaysOfThisWeek() {
       daysOfThisWeek = [],
       i,
       d;
+  firstDayOfWeek.setHours(0,0,0,0);
   firstDayOfWeek.setDate(firstDayOfWeek.getDate() + firstDayOfWeekDelta);
   d = new Date(firstDayOfWeek);
   daysOfThisWeek[daysOfThisWeek.length] = new Date(d);
